@@ -9,10 +9,7 @@ debug = DebugToolbarExtension(app)
 
 @app.route('/')
 def homepage_input_form():
-    prompts = []
-    stories = ["", "", ""]
-
-    newStory = Story(prompt, story)
+   
     return render_template('form.html', list_of_prompts=story.prompts)
 
 @app.route('/story')

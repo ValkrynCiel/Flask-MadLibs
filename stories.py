@@ -38,14 +38,11 @@ class Story:
 # Here's a story to get you started
 
 
-stories = {story1: Story(
-    ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a
-       large {adjective} {noun}. It loved to {verb} {plural_noun}."""
-), 
-{story2: Story(
-    [],
-    """ Once upon a {noun}, a {adjective} panda wandered to {location}. I love to {verb} a good {plural_noun}. """ 
-),}
 
+story1 = Story(["place", "noun", "verb", "adjective", "plural_noun"], """Once upon a time in a long-ago {place}, there lived a large {adjective} {noun}. It loved to {verb} {plural_noun}.""") 
 
+story2 = Story(["noun", "adjective", "location", "verb", "plural_noun"], """ Once upon a {noun}, a {adjective} panda wandered to {location}. I love to {verb} good {plural_noun}.""")
+
+story3 = Story(["adjective", "verb", "plural_nouns", "adverb", "noun", "verb2"], """ There was once a {adjective} dog that liked to {verb} {plural_nouns}. It did not like to {adverb} chase after the {noun} that {verb2} all day.""")
+
+story = story3

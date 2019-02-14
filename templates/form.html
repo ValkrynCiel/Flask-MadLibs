@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+ 
+{% block title %}Madlibs Form{% endblock %}
+
+{% block header %} Create a story with this form! {% endblock %}
+
+{% block content %}
+    <form action="/story" class="madlib-form">
+        {% for prompt in list_of_prompts %}
+            <label for="madlibs-{{ prompt }}">{{ prompt }}</label>
+            <input type="text" id="madlibs-{{ prompt }}" name="{{ prompt }}">
+        {% endfor %}
+        <button>Make that Madlib!</button>
+    </form>
+{% endblock %}
